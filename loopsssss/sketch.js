@@ -9,7 +9,7 @@ function setup(){
 
  function draw(){
  fill(215,200,170);
- for (let x = 0; x<10; x++){
+ for (let x = 0; x<8; x++){
  rect(size*x, height/2, size,size);
 
 }
