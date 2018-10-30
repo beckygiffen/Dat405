@@ -14,5 +14,5 @@ function draw(){
       rect(size*x, size*y, size,size);
       console.log("x: "+x+", y: "+y);
     }
-  }
+  }ggkhghj
 }
