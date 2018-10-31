@@ -13,7 +13,7 @@ function draw(){
   for (let y=0; y<10; y++){
    for (let x =0; x<10; x++){
      fill("brown");
-      rect(size1*x, size1*y, size1,size1);
+      rect(size1*x, size1*y, size1,size1);//x 0 x50 etc
     }
 
       //small squares
