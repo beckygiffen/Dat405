@@ -11,6 +11,7 @@ function draw(){
    for (let x =0; x<10; x++){
      fill("brown");
       rect(size1*x, size1*y, size1,size1);//x 0 x50 etc
+      console.log("x: "+x+", y: "+y);
     }
 
 }
