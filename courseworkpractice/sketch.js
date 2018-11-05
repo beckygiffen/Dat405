@@ -1,7 +1,7 @@
 function setup() {
-  fill('white');
-  stroke('black');
-  createGrid(10, 10,10,10);
+  fill('black');
+  stroke('white');
+  createCanvas(100,100);
 
 
 }
