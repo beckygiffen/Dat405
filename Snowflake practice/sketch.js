@@ -1,4 +1,5 @@
 //rects
+let squarez;
 let xRandom;
 let yRandom;
 let sizeRandom = 100;
