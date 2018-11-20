@@ -25,10 +25,11 @@ function draw() {
 }
 
 function mousePressed() {
-  if(mouseX,mouseY,sqsz,sqsz,newcol ==100) {
-  rect(mouseX,mouseY,sqsz,sqsz);
-  } else {
-    newcol = 0;
+  if(mouseX,mouseY,sqsz,sqsz,newcol==100) {
+  //rect(mouseX,mouseY,sqsz,sqsz);
+  }
+   else {
+    newcol = 30;
 
 }
 }
