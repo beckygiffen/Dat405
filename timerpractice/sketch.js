@@ -1,43 +1,29 @@
-//courseworkfinal
-//random letter & shape faller
+let timer = 60
 
-var alphabet=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
-//this is my array to choose the random letter from
-var timer = 60;
-function setup(){
-  createCanvas(594,841); //size of the frame
-  frameRate(5);
-  text(timer,width/4,height/2);
+function setup() {
+  createCanvas(400, 400);
 }
 
-function draw(){
-  noFill();
-  stroke(random(255,random(255),random(255)));
-  textSize((random(200)));
-  textFont("American Typewriter");
-  fill (random(255),random(255),random(255));
-  stroke(random(255,random(255),random(255)));
-  noFill();
-  ellipse(280,280,500,500);
-  noFill();
-  stroke(random(255),random(255),random(255));
-  var shape1=ellipse(mouseX,mouseY,random(200),random(200));
-  var shape2=rect(mouseX,mouseY,50,50);
+function draw() {
+  background(220);
+  textAlign(CENTER, CENTER);
+  textSize(100);
+  text(timer, width/2, height/2);
+  rect(10,10,10,10)
+
+  // while (timer > 0) {  // this doesn't work because it's all happening at the same time
+  //   timer --;
+  // }
+
+  // frameCount --> this keeps track of the number of times the program has gone throught the code, 60 = 1 second
+  // % ---> this is the Modulo operator, it divides numbers and evaluates to the remainder: 17 % 5 evaluates to 2 remainder
+  // this can be used to determine if the number on the left is divisible by the number on the right
+
   if (frameCount % 60 == 0 && timer > 0) { // if the frameCount is divisible by 60, then a second has passed. it will stop at 0
-      timer --;
-    }
-    if (timer == 0) {
-      text("Stop", width/2, height*0.7);
-    }
+    timer --;
+  }
+  if (timer == 0) {
+    text("GAME OVER", width/2, height*0.7);
+  }
 
- }
-
-function mouseClicked(){
-
-  var r=random(0,25);
-  fill(random(255),random(255),random(255));
-  var randomLetter = alphabet[Math.floor(Math.random()*alphabet.length)];
-  text(randomLetter,mouseX-10,mouseY-10,random(600),random(600));
-
-  console.log(r);
 }
