@@ -3,7 +3,7 @@
 var alphabet=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 //this is my array to choose the random letter from
 var counter = 0; //Counting in seconds
-var countdown = 10; //Counting down variable, start at 10
+var countdown = 20; //Counting down variable, start at 10
 //var interval = setInterval();
 function setup(){
   createCanvas(594,841); //size of the frame
@@ -22,8 +22,8 @@ function timeIt(){ //timing function
 }
 window.onload = setupRefresh;
 
-function setupRefresh() { //
-      setTimeout("refreshPage();", 10000); // when timer gets to 10000miliseconds
+function setupRefresh() { //setup to refresh the page
+      setTimeout("refreshPage();", 20000); // when timer gets to 10000miliseconds
     }                                    //the page refreshes
     function refreshPage() {
        window.location = location.href; //refreshes the window
