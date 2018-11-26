@@ -6,3 +6,5 @@
 - when you move your mouse, squares of a 50 by 50 will appear and a circle of a random size following the mouse
 -when you click the mouse, a random letter of a random size and random RGB colour will appear at that point
 -when the timer gets to 0, the whole page refreshes and you will have 20 seconds again
+
+github link: https://github.com/beckygiffen/Dat405
