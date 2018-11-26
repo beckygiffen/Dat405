@@ -20,12 +20,12 @@ function timeIt(){ //timing function
   }
   }
 }
-window.onload = setupRefresh;
+window.onload = setupRefresh;//when we refresh
 
 function setupRefresh() { //setup to refresh the page
       setTimeout("refreshPage();", 20000); // when timer gets to 10000miliseconds
     }                                    //the page refreshes
-    function refreshPage() {
+    function refreshPage() { //function name refresh page
        window.location = location.href; //refreshes the window
     }
 
